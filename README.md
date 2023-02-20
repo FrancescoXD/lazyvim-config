@@ -15,5 +15,13 @@ Then I've installed with *Mason*:
 - clangd
 - clang-formatter
 
+## Errors
+When you open a python file if you get `Indentation contains tabs`, make a file in the root directory called `.flake8` and insert this:
+```python
+[flake8]
+max-line-length = 99
+ignore = W191
+```
+
 And that's all!
 
